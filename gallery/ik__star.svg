@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="75" height="20" role="img" aria-label=": star">
+  <title>: star</title>
+  <defs>
+  <clipPath id="r_00df1d"><rect width="75" height="20" rx="3" fill="#fff"/></clipPath>
+  </defs>
+  <g clip-path="url(#r_00df1d)">
+  <rect width="35" height="20" fill="#1a1a2e"/>
+  <rect x="35" width="40" height="20" fill="#8b5cf6"/>
+  </g>
+  <g transform="translate(10,4.5) scale(0.917)" fill="#ffffff"><polygon points="6,1 7.5,4.1 11,4.6 8.5,7.0 9.1,10.5 6,8.9 2.9,10.5 3.5,7.0 1,4.6 4.5,4.1"/></g>
+  <text x="44" y="14.5" fill="#ffffff" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">star</text>
+  </svg>
