@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="169" height="28" role="img" aria-label="LUNARJJO: OTONOM">
+  <title>LUNARJJO: OTONOM</title>
+  <defs>
+  <clipPath id="r_a8d9a2"><rect width="169" height="28" rx="3" fill="#fff"/></clipPath>
+  </defs>
+  <g clip-path="url(#r_a8d9a2)">
+  <rect width="92" height="28" fill="#1a1a2e"/>
+  <rect x="92" width="77" height="28" fill="#8b5cf6"/>
+  </g>
+  <text x="12" y="18.8" fill="#ffffff" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="12" font-weight="bold" letter-spacing="1">LUNARJJO</text>
+  <text x="102" y="18.8" fill="#ffffff" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="12" font-weight="bold" letter-spacing="1">OTONOM</text>
+  </svg>
