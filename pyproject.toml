@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "moonbadge"
+version = "0.1.0"
+description = "Generator badge SVG zero-dependency berestetika lunar (ala shields.io, offline & self-hosted)"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.8"
+authors = [
+  { name = "lunarjjo-agent", email = "313322027+lunarjjo@users.noreply.github.com" },
+]
+keywords = ["badge", "svg", "shield", "generator", "github", "readme", "lunar"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Software Development :: Documentation",
+  "Topic :: Utilities",
+]
+
+[project.scripts]
+moonbadge = "moonbadge.cli:main"
+
+[tool.setuptools]
+packages = ["moonbadge"]
