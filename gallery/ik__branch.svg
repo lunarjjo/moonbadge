@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="91" height="20" role="img" aria-label=": branch">
+  <title>: branch</title>
+  <defs>
+  <clipPath id="r_a6bd8c"><rect width="91" height="20" rx="3" fill="#fff"/></clipPath>
+  </defs>
+  <g clip-path="url(#r_a6bd8c)">
+  <rect width="35" height="20" fill="#1a1a2e"/>
+  <rect x="35" width="56" height="20" fill="#8b5cf6"/>
+  </g>
+  <g transform="translate(10,4.5) scale(0.917)" fill="#ffffff"><circle cx="3" cy="2.8" r="1.5"/><circle cx="3" cy="9.2" r="1.5"/><circle cx="9.2" cy="6" r="1.5"/><rect x="2.2" y="4.3" width="1.6" height="3.4"/><rect x="3.8" y="5.2" width="5.4" height="1.6"/></g>
+  <text x="44" y="14.5" fill="#ffffff" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">branch</text>
+  </svg>
