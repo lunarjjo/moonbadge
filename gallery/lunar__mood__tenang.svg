@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="121" height="22" role="img" aria-label="mood: tenang">
+  <title>mood: tenang</title>
+  <defs>
+  <clipPath id="r_05d1c1"><rect width="121" height="22" rx="6" fill="#fff"/></clipPath>
+  <linearGradient id="rg_05d1c1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a78bfa"/><stop offset="1" stop-color="#7c3aed"/></linearGradient>
+  </defs>
+  <g clip-path="url(#r_05d1c1)">
+  <rect width="66" height="22" fill="#16162a"/>
+  <rect x="66" width="55" height="22" fill="url(#rg_05d1c1)"/>
+  <g transform="translate(100,3.0) scale(1.333)" fill="#ffffff" opacity="0.16"><path fill-rule="evenodd" d="M6 0.8 A5.2 5.2 0 1 0 6 11.2 A5.2 5.2 0 1 0 6 0.8 Z M7.4 2.4 A3.9 3.9 0 1 0 7.4 9.6 A3.9 3.9 0 1 0 7.4 2.4 Z"/></g>
+  </g>
+  <rect x="0.5" y="0.5" width="120" height="21" rx="5.5" fill="none" stroke="#8b5cf6" stroke-opacity="0.35" stroke-width="1"/>
+  <g transform="translate(10,5.0) scale(1.0)" fill="#c4b5fd"><polygon points="6,1 7.5,4.1 11,4.6 8.5,7.0 9.1,10.5 6,8.9 2.9,10.5 3.5,7.0 1,4.6 4.5,4.1"/></g>
+  <text x="27" y="15.5" fill="#c4b5fd" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">mood</text>
+  <text x="75" y="15.5" fill="#ffffff" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">tenang</text>
+  </svg>
