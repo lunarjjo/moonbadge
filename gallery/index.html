@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>moonbadge · galeri</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    background: #0b0b16; color: #cbd5e1;
+    background-image: radial-gradient(60% 40% at 50% 0%, rgba(139,92,246,.14), transparent 70%);
+    min-height: 100vh;
+  }
+  .wrap { max-width: 1060px; margin: 0 auto; padding: 48px 24px 64px; }
+  header { text-align: center; margin-bottom: 42px; }
+  h1 {
+    font-size: 44px; letter-spacing: -.02em; margin: 14px 0 8px;
+    background: linear-gradient(90deg, #c4b5fd, #8b5cf6 55%, #6366f1);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .sub { color: #94a3b8; max-width: 560px; margin: 0 auto; line-height: 1.6; }
+  .hero { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;
+          margin-top: 22px; align-items: center; }
+  h2 { font-size: 15px; text-transform: uppercase; letter-spacing: .14em;
+       color: #8b5cf6; margin: 40px 0 16px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+          gap: 16px; }
+  .grid.icons { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+  .card {
+    background: #121224; border: 1px solid rgba(255,255,255,.08);
+    border-radius: 14px; padding: 22px 18px 16px;
+    transition: transform .15s ease, border-color .15s ease;
+  }
+  .card:hover { transform: translateY(-2px); border-color: rgba(139,92,246,.5); }
+  .card .art { margin-bottom: 14px; }
+  .card h3 { font-size: 13px; font-weight: 600; color: #e2e8f0; margin-bottom: 8px; }
+  .card code {
+    display: block; font-size: 11px; color: #8b95a8; line-height: 1.5;
+    word-break: break-all; white-space: pre-wrap;
+  }
+  .card.mini { text-align: center; padding: 18px 12px; }
+  .card.mini h3 { color: #8b95a8; font-family: ui-monospace, monospace; }
+  footer { text-align: center; margin-top: 56px; color: #64748b; font-size: 12px;
+           line-height: 1.8; }
+  footer a { color: #a78bfa; text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="hero"><svg xmlns="http://www.w3.org/2000/svg" width="150" height="22" role="img" aria-label="moonbadge: v0.1.0">
+  <title>moonbadge: v0.1.0</title>
+  <defs>
+  <clipPath id="r_98effd"><rect width="150" height="22" rx="6" fill="#fff"/></clipPath>
+  <linearGradient id="rg_98effd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a78bfa"/><stop offset="1" stop-color="#7c3aed"/></linearGradient>
+  </defs>
+  <g clip-path="url(#r_98effd)">
+  <rect width="98" height="22" fill="#16162a"/>
+  <rect x="98" width="52" height="22" fill="url(#rg_98effd)"/>
+  <g transform="translate(129,3.0) scale(1.333)" fill="#ffffff" opacity="0.16"><path fill-rule="evenodd" d="M6 0.8 A5.2 5.2 0 1 0 6 11.2 A5.2 5.2 0 1 0 6 0.8 Z M7.4 2.4 A3.9 3.9 0 1 0 7.4 9.6 A3.9 3.9 0 1 0 7.4 2.4 Z"/></g>
+  </g>
+  <rect x="0.5" y="0.5" width="149" height="21" rx="5.5" fill="none" stroke="#8b5cf6" stroke-opacity="0.35" stroke-width="1"/>
+  <g transform="translate(10,5.0) scale(1.0)" fill="#c4b5fd"><path fill-rule="evenodd" d="M6 0.8 A5.2 5.2 0 1 0 6 11.2 A5.2 5.2 0 1 0 6 0.8 Z M7.4 2.4 A3.9 3.9 0 1 0 7.4 9.6 A3.9 3.9 0 1 0 7.4 2.4 Z"/></g>
+  <text x="27" y="15.5" fill="#c4b5fd" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">moonbadge</text>
+  <text x="107" y="15.5" fill="#ffffff" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">v0.1.0</text>
+  </svg> <svg xmlns="http://www.w3.org/2000/svg" width="163" height="22" role="img" aria-label="zero-dep: python 3.8+">
+  <title>zero-dep: python 3.8+</title>
+  <defs>
+  <clipPath id="r_69424e"><rect width="163" height="22" rx="8" fill="#fff"/></clipPath>
+  </defs>
+  <g clip-path="url(#r_69424e)">
+  <rect width="82" height="22" fill="#0f172a"/>
+  <rect x="82" width="81" height="22" fill="#0f172a"/>
+  </g>
+  <rect x="0.5" y="0.5" width="162" height="21" rx="7.5" fill="none" stroke="#ffffff" stroke-opacity="0.18" stroke-width="1"/>
+  <rect x="155" y="4" width="3.5" height="14" rx="1.75" fill="#8b5cf6"/>
+  <g transform="translate(10,5.0) scale(1.0)" fill="#e2e8f0"><polygon points="7,0.6 1.8,6.6 5.4,6.6 4.4,11.4 10.2,5.2 6.6,5.2"/></g>
+  <text x="27" y="15.5" fill="#e2e8f0" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">zero-dep</text>
+  <text x="90" y="15.5" fill="#c4b5fd" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">python 3.8+</text>
+  </svg> <svg xmlns="http://www.w3.org/2000/svg" width="92" height="20" role="img" aria-label="lisensi: MIT">
+  <title>lisensi: MIT</title>
+  <defs>
+  <clipPath id="r_515e5f"><rect width="92" height="20" rx="0" fill="#fff"/></clipPath>
+  </defs>
+  <g clip-path="url(#r_515e5f)">
+  <rect width="53" height="20" fill="#1a1a2e"/>
+  <rect x="53" width="39" height="20" fill="#10b981"/>
+  </g>
+  <text x="10" y="14.5" fill="#ffffff" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">lisensi</text>
+  <text x="62" y="14.5" fill="#ffffff" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">MIT</text>
+  </svg></div>
+    <h1>moonbadge</h1>
+    <p class="sub">Generator badge SVG zero-dependency berestetika lunar —
+    6 gaya, 9 ikon, offline &amp; self-hosted. Setiap badge di halaman ini
+    dirender oleh pustaka yang sama yang ada di repo.</p>
+  </header>
+
+  <h2>Gaya &amp; Warna</h2>
+  <div class="grid"><div class="card"><div class="art"><svg xmlns="http://www.w3.org/2000/svg" width="91" height="20" role="img" aria-label="agent: aktif">
+  <title>agent: aktif</title>
+  <defs>
+  <clipPath id="r_b1db8c"><rect width="91" height="20" rx="3" fill="#fff"/></clipPath>
+  </defs>
+  <g clip-path="url(#r_b1db8c)">
+  <rect width="49" height="20" fill="#1a1a2e"/>
+  <rect x="49" width="42" height="20" fill="#8b5cf6"/>
+  </g>
+  <text x="10" y="14.5" fill="#ffffff" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">agent</text>
+  <text x="58" y="14.5" fill="#ffffff" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">aktif</text>
+  </svg></div><h3>flat — gaya klasik, palet lunar bawaan</h3><code>python3 -m moonbadge &quot;agent&quot; &quot;aktif&quot;</code></div>
+<div class="card"><div class="art"><svg xmlns="http://www.w3.org/2000/svg" width="80" height="20" role="img" aria-label="deps: nol">
+  <title>deps: nol</title>
+  <defs>
+  <clipPath id="r_a4c8ca"><rect width="80" height="20" rx="0" fill="#fff"/></clipPath>
+  </defs>
+  <g clip-path="url(#r_a4c8ca)">
+  <rect width="45" height="20" fill="#1a1a2e"/>
+  <rect x="45" width="35" height="20" fill="#10b981"/>
+  </g>
+  <text x="10" y="14.5" fill="#ffffff" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">deps</text>
+  <text x="54" y="14.5" fill="#ffffff" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">nol</text>
+  </svg></div><h3>flat-square — siku tajam, warna kustom</h3><code>python3 -m moonbadge &quot;deps&quot; &quot;nol&quot; --style &quot;flat-square&quot; --right-color &quot;#10b981&quot;</code></div>
+<div class="card"><div class="art"><svg xmlns="http://www.w3.org/2000/svg" width="96" height="18" role="img" aria-label="pulse: hidup">
+  <title>pulse: hidup</title>
+  <defs>
+  <clipPath id="r_50a452"><rect width="96" height="18" rx="3" fill="#fff"/></clipPath>
+  <linearGradient id="gl_50a452" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.38"/><stop offset="1" stop-color="#ffffff" stop-opacity="0.06"/></linearGradient>
+  </defs>
+  <g clip-path="url(#r_50a452)">
+  <rect width="48" height="18" fill="#2a2a45"/>
+  <rect x="48" width="48" height="18" fill="#6d28d9"/>
+  <rect width="96" height="9" fill="url(#gl_50a452)"/>
+  </g>
+  <text x="10" y="13.5" fill="#ffffff" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">pulse</text>
+  <text x="57" y="13.5" fill="#ffffff" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">hidup</text>
+  </svg></div><h3>plastic — kilau glossy ala badge klasik</h3><code>python3 -m moonbadge &quot;pulse&quot; &quot;hidup&quot; --style &quot;plastic&quot;</code></div>
+<div class="card"><div class="art"><svg xmlns="http://www.w3.org/2000/svg" width="169" height="28" role="img" aria-label="LUNARJJO: OTONOM">
+  <title>LUNARJJO: OTONOM</title>
+  <defs>
+  <clipPath id="r_a8d9a2"><rect width="169" height="28" rx="3" fill="#fff"/></clipPath>
+  </defs>
+  <g clip-path="url(#r_a8d9a2)">
+  <rect width="92" height="28" fill="#1a1a2e"/>
+  <rect x="92" width="77" height="28" fill="#8b5cf6"/>
+  </g>
+  <text x="12" y="18.8" fill="#ffffff" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="12" font-weight="bold" letter-spacing="1">LUNARJJO</text>
+  <text x="102" y="18.8" fill="#ffffff" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="12" font-weight="bold" letter-spacing="1">OTONOM</text>
+  </svg></div><h3>for-the-badge — besar, kapital, tebal</h3><code>python3 -m moonbadge &quot;lunarjjo&quot; &quot;otonom&quot; --style &quot;for-the-badge&quot;</code></div>
+<div class="card"><div class="art"><svg xmlns="http://www.w3.org/2000/svg" width="119" height="22" role="img" aria-label="agent: v0.1.0">
+  <title>agent: v0.1.0</title>
+  <defs>
+  <clipPath id="r_2e9b13"><rect width="119" height="22" rx="6" fill="#fff"/></clipPath>
+  <linearGradient id="rg_2e9b13" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a78bfa"/><stop offset="1" stop-color="#7c3aed"/></linearGradient>
+  </defs>
+  <g clip-path="url(#r_2e9b13)">
+  <rect width="66" height="22" fill="#16162a"/>
+  <rect x="66" width="53" height="22" fill="url(#rg_2e9b13)"/>
+  <g transform="translate(98,3.0) scale(1.333)" fill="#ffffff" opacity="0.16"><path fill-rule="evenodd" d="M6 0.8 A5.2 5.2 0 1 0 6 11.2 A5.2 5.2 0 1 0 6 0.8 Z M7.4 2.4 A3.9 3.9 0 1 0 7.4 9.6 A3.9 3.9 0 1 0 7.4 2.4 Z"/></g>
+  </g>
+  <rect x="0.5" y="0.5" width="118" height="21" rx="5.5" fill="none" stroke="#8b5cf6" stroke-opacity="0.35" stroke-width="1"/>
+  <g transform="translate(10,5.0) scale(1.0)" fill="#c4b5fd"><path fill-rule="evenodd" d="M6 0.8 A5.2 5.2 0 1 0 6 11.2 A5.2 5.2 0 1 0 6 0.8 Z M7.4 2.4 A3.9 3.9 0 1 0 7.4 9.6 A3.9 3.9 0 1 0 7.4 2.4 Z"/></g>
+  <text x="27" y="15.5" fill="#c4b5fd" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">agent</text>
+  <text x="75" y="15.5" fill="#ffffff" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">v0.1.0</text>
+  </svg></div><h3>lunar — gradien violet + watermark bulan sabit</h3><code>python3 -m moonbadge &quot;agent&quot; &quot;v0.1.0&quot; --style &quot;lunar&quot; --icon &quot;moon&quot;</code></div>
+<div class="card"><div class="art"><svg xmlns="http://www.w3.org/2000/svg" width="107" height="22" role="img" aria-label="tests: lulus">
+  <title>tests: lulus</title>
+  <defs>
+  <clipPath id="r_e55551"><rect width="107" height="22" rx="6" fill="#fff"/></clipPath>
+  <linearGradient id="rg_e55551" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a78bfa"/><stop offset="1" stop-color="#7c3aed"/></linearGradient>
+  </defs>
+  <g clip-path="url(#r_e55551)">
+  <rect width="63" height="22" fill="#16162a"/>
+  <rect x="63" width="44" height="22" fill="url(#rg_e55551)"/>
+  <g transform="translate(86,3.0) scale(1.333)" fill="#ffffff" opacity="0.16"><path fill-rule="evenodd" d="M6 0.8 A5.2 5.2 0 1 0 6 11.2 A5.2 5.2 0 1 0 6 0.8 Z M7.4 2.4 A3.9 3.9 0 1 0 7.4 9.6 A3.9 3.9 0 1 0 7.4 2.4 Z"/></g>
+  </g>
+  <rect x="0.5" y="0.5" width="106" height="21" rx="5.5" fill="none" stroke="#8b5cf6" stroke-opacity="0.35" stroke-width="1"/>
+  <g transform="translate(10,5.0) scale(1.0)" fill="#c4b5fd"><polygon points="4.9,9.6 1.6,6.3 3.0,4.9 4.9,6.8 9.0,2.0 10.4,3.4"/></g>
+  <text x="27" y="15.5" fill="#c4b5fd" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">tests</text>
+  <text x="72" y="15.5" fill="#ffffff" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">lulus</text>
+  </svg></div><h3>lunar + ikon centang</h3><code>python3 -m moonbadge &quot;tests&quot; &quot;lulus&quot; --style &quot;lunar&quot; --icon &quot;check&quot;</code></div>
+<div class="card"><div class="art"><svg xmlns="http://www.w3.org/2000/svg" width="109" height="22" role="img" aria-label="pulse: 24/7">
+  <title>pulse: 24/7</title>
+  <defs>
+  <clipPath id="r_206ed9"><rect width="109" height="22" rx="6" fill="#fff"/></clipPath>
+  <linearGradient id="rg_206ed9" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a78bfa"/><stop offset="1" stop-color="#7c3aed"/></linearGradient>
+  </defs>
+  <g clip-path="url(#r_206ed9)">
+  <rect width="65" height="22" fill="#16162a"/>
+  <rect x="65" width="44" height="22" fill="url(#rg_206ed9)"/>
+  <g transform="translate(88,3.0) scale(1.333)" fill="#ffffff" opacity="0.16"><path fill-rule="evenodd" d="M6 0.8 A5.2 5.2 0 1 0 6 11.2 A5.2 5.2 0 1 0 6 0.8 Z M7.4 2.4 A3.9 3.9 0 1 0 7.4 9.6 A3.9 3.9 0 1 0 7.4 2.4 Z"/></g>
+  </g>
+  <rect x="0.5" y="0.5" width="108" height="21" rx="5.5" fill="none" stroke="#8b5cf6" stroke-opacity="0.35" stroke-width="1"/>
+  <g transform="translate(10,5.0) scale(1.0)" fill="#c4b5fd"><polygon points="6,0 7.5,4.5 12,6 7.5,7.5 6,12 4.5,7.5 0,6 4.5,4.5"/></g>
+  <text x="27" y="15.5" fill="#c4b5fd" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">pulse</text>
+  <text x="74" y="15.5" fill="#ffffff" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">24/7</text>
+  </svg></div><h3>lunar + ikon kilau</h3><code>python3 -m moonbadge &quot;pulse&quot; &quot;24/7&quot; --style &quot;lunar&quot; --icon &quot;spark&quot;</code></div>
+<div class="card"><div class="art"><svg xmlns="http://www.w3.org/2000/svg" width="122" height="22" role="img" aria-label="uptime: 99.9%">
+  <title>uptime: 99.9%</title>
+  <defs>
+  <clipPath id="r_c89d40"><rect width="122" height="22" rx="8" fill="#fff"/></clipPath>
+  </defs>
+  <g clip-path="url(#r_c89d40)">
+  <rect width="71" height="22" fill="#0f172a"/>
+  <rect x="71" width="51" height="22" fill="#0f172a"/>
+  </g>
+  <rect x="0.5" y="0.5" width="121" height="21" rx="7.5" fill="none" stroke="#ffffff" stroke-opacity="0.18" stroke-width="1"/>
+  <rect x="114" y="4" width="3.5" height="14" rx="1.75" fill="#8b5cf6"/>
+  <g transform="translate(10,5.0) scale(1.0)" fill="#e2e8f0"><polygon points="7,0.6 1.8,6.6 5.4,6.6 4.4,11.4 10.2,5.2 6.6,5.2"/></g>
+  <text x="27" y="15.5" fill="#e2e8f0" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">uptime</text>
+  <text x="79" y="15.5" fill="#c4b5fd" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">99.9%</text>
+  </svg></div><h3>glass — pil gelap + bar aksen</h3><code>python3 -m moonbadge &quot;uptime&quot; &quot;99.9%&quot; --style &quot;glass&quot; --icon &quot;bolt&quot;</code></div>
+<div class="card"><div class="art"><svg xmlns="http://www.w3.org/2000/svg" width="90" height="22" role="img" aria-label="lisensi: MIT">
+  <title>lisensi: MIT</title>
+  <defs>
+  <clipPath id="r_ce00aa"><rect width="90" height="22" rx="8" fill="#fff"/></clipPath>
+  </defs>
+  <g clip-path="url(#r_ce00aa)">
+  <rect width="52" height="22" fill="#0f172a"/>
+  <rect x="52" width="38" height="22" fill="#0f172a"/>
+  </g>
+  <rect x="0.5" y="0.5" width="89" height="21" rx="7.5" fill="none" stroke="#ffffff" stroke-opacity="0.18" stroke-width="1"/>
+  <rect x="82" y="4" width="3.5" height="14" rx="1.75" fill="#8b5cf6"/>
+  <text x="10" y="15.5" fill="#e2e8f0" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">lisensi</text>
+  <text x="60" y="15.5" fill="#c4b5fd" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">MIT</text>
+  </svg></div><h3>glass tanpa ikon</h3><code>python3 -m moonbadge &quot;lisensi&quot; &quot;MIT&quot; --style &quot;glass&quot;</code></div>
+<div class="card"><div class="art"><svg xmlns="http://www.w3.org/2000/svg" width="114" height="20" role="img" aria-label="python: 3.8+">
+  <title>python: 3.8+</title>
+  <defs>
+  <clipPath id="r_d65037"><rect width="114" height="20" rx="3" fill="#fff"/></clipPath>
+  </defs>
+  <g clip-path="url(#r_d65037)">
+  <rect width="71" height="20" fill="#1a1a2e"/>
+  <rect x="71" width="43" height="20" fill="#3776ab"/>
+  </g>
+  <g transform="translate(10,4.5) scale(0.917)" fill="#ffffff"><polygon points="1.6,2.2 4.4,6 1.6,9.8 3.2,9.8 6.0,6 3.2,2.2"/><rect x="6.8" y="8.4" width="3.8" height="1.7" rx="0.4"/></g>
+  <text x="26" y="14.5" fill="#ffffff" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">python</text>
+  <text x="80" y="14.5" fill="#ffffff" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">3.8+</text>
+  </svg></div><h3>flat + warna kustom + ikon terminal</h3><code>python3 -m moonbadge &quot;python&quot; &quot;3.8+&quot; --icon &quot;terminal&quot; --right-color &quot;#3776ab&quot;</code></div>
+<div class="card"><div class="art"><svg xmlns="http://www.w3.org/2000/svg" width="137" height="20" role="img" aria-label="ci: github actions">
+  <title>ci: github actions</title>
+  <defs>
+  <clipPath id="r_c88bed"><rect width="137" height="20" rx="3" fill="#fff"/></clipPath>
+  </defs>
+  <g clip-path="url(#r_c88bed)">
+  <rect width="44" height="20" fill="#1a1a2e"/>
+  <rect x="44" width="93" height="20" fill="#2088ff"/>
+  </g>
+  <g transform="translate(10,4.5) scale(0.917)" fill="#ffffff"><circle cx="3" cy="2.8" r="1.5"/><circle cx="3" cy="9.2" r="1.5"/><circle cx="9.2" cy="6" r="1.5"/><rect x="2.2" y="4.3" width="1.6" height="3.4"/><rect x="3.8" y="5.2" width="5.4" height="1.6"/></g>
+  <text x="26" y="14.5" fill="#ffffff" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">ci</text>
+  <text x="53" y="14.5" fill="#ffffff" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">github actions</text>
+  </svg></div><h3>flat + ikon branch git</h3><code>python3 -m moonbadge &quot;ci&quot; &quot;github actions&quot; --icon &quot;branch&quot; --right-color &quot;#2088ff&quot;</code></div>
+<div class="card"><div class="art"><svg xmlns="http://www.w3.org/2000/svg" width="121" height="22" role="img" aria-label="mood: tenang">
+  <title>mood: tenang</title>
+  <defs>
+  <clipPath id="r_05d1c1"><rect width="121" height="22" rx="6" fill="#fff"/></clipPath>
+  <linearGradient id="rg_05d1c1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a78bfa"/><stop offset="1" stop-color="#7c3aed"/></linearGradient>
+  </defs>
+  <g clip-path="url(#r_05d1c1)">
+  <rect width="66" height="22" fill="#16162a"/>
+  <rect x="66" width="55" height="22" fill="url(#rg_05d1c1)"/>
+  <g transform="translate(100,3.0) scale(1.333)" fill="#ffffff" opacity="0.16"><path fill-rule="evenodd" d="M6 0.8 A5.2 5.2 0 1 0 6 11.2 A5.2 5.2 0 1 0 6 0.8 Z M7.4 2.4 A3.9 3.9 0 1 0 7.4 9.6 A3.9 3.9 0 1 0 7.4 2.4 Z"/></g>
+  </g>
+  <rect x="0.5" y="0.5" width="120" height="21" rx="5.5" fill="none" stroke="#8b5cf6" stroke-opacity="0.35" stroke-width="1"/>
+  <g transform="translate(10,5.0) scale(1.0)" fill="#c4b5fd"><polygon points="6,1 7.5,4.1 11,4.6 8.5,7.0 9.1,10.5 6,8.9 2.9,10.5 3.5,7.0 1,4.6 4.5,4.1"/></g>
+  <text x="27" y="15.5" fill="#c4b5fd" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">mood</text>
+  <text x="75" y="15.5" fill="#ffffff" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">tenang</text>
+  </svg></div><h3>lunar + ikon bintang</h3><code>python3 -m moonbadge &quot;mood&quot; &quot;tenang&quot; --style &quot;lunar&quot; --icon &quot;star&quot;</code></div></div>
+
+  <h2>Set Ikon</h2>
+  <div class="grid icons"><div class="card mini"><div class="art"><svg xmlns="http://www.w3.org/2000/svg" width="84" height="20" role="img" aria-label=": moon">
+  <title>: moon</title>
+  <defs>
+  <clipPath id="r_33b5b2"><rect width="84" height="20" rx="3" fill="#fff"/></clipPath>
+  </defs>
+  <g clip-path="url(#r_33b5b2)">
+  <rect width="35" height="20" fill="#1a1a2e"/>
+  <rect x="35" width="49" height="20" fill="#8b5cf6"/>
+  </g>
+  <g transform="translate(10,4.5) scale(0.917)" fill="#ffffff"><path fill-rule="evenodd" d="M6 0.8 A5.2 5.2 0 1 0 6 11.2 A5.2 5.2 0 1 0 6 0.8 Z M7.4 2.4 A3.9 3.9 0 1 0 7.4 9.6 A3.9 3.9 0 1 0 7.4 2.4 Z"/></g>
+  <text x="44" y="14.5" fill="#ffffff" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">moon</text>
+  </svg></div><h3>:moon:</h3></div>
+<div class="card mini"><div class="art"><svg xmlns="http://www.w3.org/2000/svg" width="75" height="20" role="img" aria-label=": star">
+  <title>: star</title>
+  <defs>
+  <clipPath id="r_00df1d"><rect width="75" height="20" rx="3" fill="#fff"/></clipPath>
+  </defs>
+  <g clip-path="url(#r_00df1d)">
+  <rect width="35" height="20" fill="#1a1a2e"/>
+  <rect x="35" width="40" height="20" fill="#8b5cf6"/>
+  </g>
+  <g transform="translate(10,4.5) scale(0.917)" fill="#ffffff"><polygon points="6,1 7.5,4.1 11,4.6 8.5,7.0 9.1,10.5 6,8.9 2.9,10.5 3.5,7.0 1,4.6 4.5,4.1"/></g>
+  <text x="44" y="14.5" fill="#ffffff" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">star</text>
+  </svg></div><h3>:star:</h3></div>
+<div class="card mini"><div class="art"><svg xmlns="http://www.w3.org/2000/svg" width="81" height="20" role="img" aria-label=": heart">
+  <title>: heart</title>
+  <defs>
+  <clipPath id="r_ce6b9e"><rect width="81" height="20" rx="3" fill="#fff"/></clipPath>
+  </defs>
+  <g clip-path="url(#r_ce6b9e)">
+  <rect width="35" height="20" fill="#1a1a2e"/>
+  <rect x="35" width="46" height="20" fill="#8b5cf6"/>
+  </g>
+  <g transform="translate(10,4.5) scale(0.917)" fill="#ffffff"><path d="M6 10.9 C1.6 7.9 0.8 4.7 2.5 3.0 C3.8 1.7 5.5 2.1 6 3.4 C6.5 2.1 8.2 1.7 9.5 3.0 C11.2 4.7 10.4 7.9 6 10.9 Z"/></g>
+  <text x="44" y="14.5" fill="#ffffff" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">heart</text>
+  </svg></div><h3>:heart:</h3></div>
+<div class="card mini"><div class="art"><svg xmlns="http://www.w3.org/2000/svg" width="74" height="20" role="img" aria-label=": bolt">
+  <title>: bolt</title>
+  <defs>
+  <clipPath id="r_1271ed"><rect width="74" height="20" rx="3" fill="#fff"/></clipPath>
+  </defs>
+  <g clip-path="url(#r_1271ed)">
+  <rect width="35" height="20" fill="#1a1a2e"/>
+  <rect x="35" width="39" height="20" fill="#8b5cf6"/>
+  </g>
+  <g transform="translate(10,4.5) scale(0.917)" fill="#ffffff"><polygon points="7,0.6 1.8,6.6 5.4,6.6 4.4,11.4 10.2,5.2 6.6,5.2"/></g>
+  <text x="44" y="14.5" fill="#ffffff" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">bolt</text>
+  </svg></div><h3>:bolt:</h3></div>
+<div class="card mini"><div class="art"><svg xmlns="http://www.w3.org/2000/svg" width="84" height="20" role="img" aria-label=": spark">
+  <title>: spark</title>
+  <defs>
+  <clipPath id="r_0a050e"><rect width="84" height="20" rx="3" fill="#fff"/></clipPath>
+  </defs>
+  <g clip-path="url(#r_0a050e)">
+  <rect width="35" height="20" fill="#1a1a2e"/>
+  <rect x="35" width="49" height="20" fill="#8b5cf6"/>
+  </g>
+  <g transform="translate(10,4.5) scale(0.917)" fill="#ffffff"><polygon points="6,0 7.5,4.5 12,6 7.5,7.5 6,12 4.5,7.5 0,6 4.5,4.5"/></g>
+  <text x="44" y="14.5" fill="#ffffff" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">spark</text>
+  </svg></div><h3>:spark:</h3></div>
+<div class="card mini"><div class="art"><svg xmlns="http://www.w3.org/2000/svg" width="86" height="20" role="img" aria-label=": check">
+  <title>: check</title>
+  <defs>
+  <clipPath id="r_337be5"><rect width="86" height="20" rx="3" fill="#fff"/></clipPath>
+  </defs>
+  <g clip-path="url(#r_337be5)">
+  <rect width="35" height="20" fill="#1a1a2e"/>
+  <rect x="35" width="51" height="20" fill="#8b5cf6"/>
+  </g>
+  <g transform="translate(10,4.5) scale(0.917)" fill="#ffffff"><polygon points="4.9,9.6 1.6,6.3 3.0,4.9 4.9,6.8 9.0,2.0 10.4,3.4"/></g>
+  <text x="44" y="14.5" fill="#ffffff" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">check</text>
+  </svg></div><h3>:check:</h3></div>
+<div class="card mini"><div class="art"><svg xmlns="http://www.w3.org/2000/svg" width="97" height="20" role="img" aria-label=": terminal">
+  <title>: terminal</title>
+  <defs>
+  <clipPath id="r_321e01"><rect width="97" height="20" rx="3" fill="#fff"/></clipPath>
+  </defs>
+  <g clip-path="url(#r_321e01)">
+  <rect width="35" height="20" fill="#1a1a2e"/>
+  <rect x="35" width="62" height="20" fill="#8b5cf6"/>
+  </g>
+  <g transform="translate(10,4.5) scale(0.917)" fill="#ffffff"><polygon points="1.6,2.2 4.4,6 1.6,9.8 3.2,9.8 6.0,6 3.2,2.2"/><rect x="6.8" y="8.4" width="3.8" height="1.7" rx="0.4"/></g>
+  <text x="44" y="14.5" fill="#ffffff" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">terminal</text>
+  </svg></div><h3>:terminal:</h3></div>
+<div class="card mini"><div class="art"><svg xmlns="http://www.w3.org/2000/svg" width="88" height="20" role="img" aria-label=": rocket">
+  <title>: rocket</title>
+  <defs>
+  <clipPath id="r_35eb3a"><rect width="88" height="20" rx="3" fill="#fff"/></clipPath>
+  </defs>
+  <g clip-path="url(#r_35eb3a)">
+  <rect width="35" height="20" fill="#1a1a2e"/>
+  <rect x="35" width="53" height="20" fill="#8b5cf6"/>
+  </g>
+  <g transform="translate(10,4.5) scale(0.917)" fill="#ffffff"><path d="M6 0.7 C7.8 2.0 8.8 4.3 8.8 6.8 L8.8 8.7 L3.2 8.7 L3.2 6.8 C3.2 4.3 4.2 2.0 6 0.7 Z"/><polygon points="3.2,6.4 1.0,9.6 3.2,8.8"/><polygon points="8.8,6.4 11.0,9.6 8.8,8.8"/><polygon points="4.8,9.6 7.2,9.6 6,11.6"/></g>
+  <text x="44" y="14.5" fill="#ffffff" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">rocket</text>
+  </svg></div><h3>:rocket:</h3></div>
+<div class="card mini"><div class="art"><svg xmlns="http://www.w3.org/2000/svg" width="91" height="20" role="img" aria-label=": branch">
+  <title>: branch</title>
+  <defs>
+  <clipPath id="r_a6bd8c"><rect width="91" height="20" rx="3" fill="#fff"/></clipPath>
+  </defs>
+  <g clip-path="url(#r_a6bd8c)">
+  <rect width="35" height="20" fill="#1a1a2e"/>
+  <rect x="35" width="56" height="20" fill="#8b5cf6"/>
+  </g>
+  <g transform="translate(10,4.5) scale(0.917)" fill="#ffffff"><circle cx="3" cy="2.8" r="1.5"/><circle cx="3" cy="9.2" r="1.5"/><circle cx="9.2" cy="6" r="1.5"/><rect x="2.2" y="4.3" width="1.6" height="3.4"/><rect x="3.8" y="5.2" width="5.4" height="1.6"/></g>
+  <text x="44" y="14.5" fill="#ffffff" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">branch</text>
+  </svg></div><h3>:branch:</h3></div></div>
+
+  <footer>
+    dibangun secara otonom oleh agen <a href="https://github.com/lunarjjo">lunarjjo</a>
+    untuk <a href="https://github.com/kasyaira">@kasyaira</a> · MIT ·
+    <a href="https://github.com/lunarjjo/moonbadge">github.com/lunarjjo/moonbadge</a>
+  </footer>
+</div>
+</body>
+</html>
